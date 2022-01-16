@@ -247,6 +247,26 @@
     บทที่ 1: LED ไฟกะพริบ
   </a>
   
+    <nav class="md-nav" aria-label="บทที่ 1: LED ไฟกะพริบ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    การเชื่อมต่อฮาร์ดแวร์
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    ซอฟแวร์ที่ใช้
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -366,6 +386,26 @@
     บทที่ 1: LED ไฟกะพริบ
   </a>
   
+    <nav class="md-nav" aria-label="บทที่ 1: LED ไฟกะพริบ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    การเชื่อมต่อฮาร์ดแวร์
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    ซอฟแวร์ที่ใช้
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -421,20 +461,39 @@
 <p>นอกจากนี้สามารถประยุกต์ใช้ในการควบคุมอุปกรณ์ระยะไกลได้ เพื่อให้เกิดความสมบูรณ์ในการแสดงค่า  การทดลองต่อไปนี้จึงสาธิตการแสดงผลการวัดที่ serial monitor และ TFT LCD อีกด้วย</p>
 <h2 id="_3">เนื้อหาบทเรียน</h2>
 <h3 id="1-led">บทที่ 1: LED ไฟกะพริบ</h3>
-<p>สำหรับบอร์ด NodeMCU ESP32 ที่ใช้นี้มี Light Emitting Diode: LED ที่ติดตั้งอยู่บนตัวบอร์ดไว้ให้แล้ว (On board LED)<br />
-    <figure markdown>
-    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32-onboardled.jpg" width="600" />
-    <figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
-    </figure>
-การติดสว่างของ LED นั้นเกิดขึนเมื่อจ่ายแรงดันทำงาน 3V ให้กับ LED และเมื่อหยุดจ่ายแรงดัน 3V ก็จะหยุดเปล่งแสง 
-    <figure markdown>
-    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/squarewave.png" width="600" />
-    <figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
-    </figure>
-โดยสามารถทดสอบด้วย Sketch ดังต่อไปนี้<br />
-<div class="highlight"><pre><span></span><code><span class="c1">//LED Blink</span>
+<p>ในการทดลองนี้เป็นการสั่งให้ Light Emitting Diode: LED บนตัว NodeMCU แสดงการกระพริบเปิดปิด การทดลองจะทำให้รู้จักองค์ประกอบพื้นฐานของการควบคุม ได้แก่ อินพุท การควบคุม และ เอาท์พุท ในตัวอย่าง LED นี้ จะเป็นการสั่งผ่านเอาท์พุทเท่านั้น ไม่มีการรับค่าอินพุท โดยมี NodeMCU เป็นตัวควบคุมการทำงาน และ LED เป็นเอาท์พุท และสัญญาณที่ใช้เป็นสัญญาณดิจิทัล </p>
+<p>สำหรับบอร์ด NodeMCU ESP32 ที่ใช้นี้มี LED ที่ติดตั้งอยู่บนตัวบอร์ดไว้ให้แล้ว <mark>(On board LED) ที่ขา 2</mark> จึงไม่จำเป็นต้องใช้ LED ต่อกับ GPIO ขาอื่นๆ หากต้องการเพียงทดสอบการทำงานเบื้องต้น</p>
+<figure>
+<p><img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32-onboardled.jpg" width="400" /></p>
+<figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
+</figure>
+<p>การติดสว่างของ LED นั้นเกิดขึนเมื่อจ่ายแรงดันทำงาน 3V ให้กับ LED และเมื่อจ่ายแรงดัน 0V ก็ LED จะหยุดเปล่งแสง  การจ่ายแรงดันสลับกันที่ 3V และ 0V หรือ On และ Off นั้นเรียกว่าเป็นสัญญาณดิจิทัล</p>
+<p>สัญญาณดิจิทัล: เป็นสัญญาณที่มีระดับแอมพลิจูดเป็นระดับไม่ต่อเนื่อง (Discrete) ค่าแอมพลิจูดมีระดับที่ตายตัว เลือกไว้แล้ว ในการใช้งานกับบอร์ดควบคุมของเรา สัญญาณดิจิทัลถูกกำหนดให้มีค่าเป็น 2 ระดับ คือ 0 โวลต์ (ระดับต่ำ หรือ 0) และ 3 โวลต์ (ระดับสูง หรือ 1)</p>
+<figure>
+<p><img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/squarewave.png" width="600" /></p>
+<figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
+</figure>
+<p><strong> อุปกรณ์ที่ต้องใช้ </strong><br />
+1. NodeMCU ESP32
+1. สาย micro USB เพื่อเชื่อม NodeMCU เข้ากับ PC</p>
+<h4 id="_4">การเชื่อมต่อฮาร์ดแวร์</h4>
+<p>เชื่อมต่อโดยใช้สาย micro USB </p>
+<h4 id="_5">ซอฟแวร์ที่ใช้</h4>
+<p>โดยสามารถทดสอบด้วย Sketch ดังต่อไปนี้<br />
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">//LED Blink</span>
 <span class="c1">//The LED will turn on for one second and then turn off for one second</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
@@ -444,11 +503,32 @@
 <span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></p>
-<blockquote>
-<p><strong>รู้หรือไม่</strong>
-การทดลองไฟกะพริบนั้นเป็นจุดเริ่มต้นในการใช้งาน นอกจากนี้หากสงสัยว่าตัวอุปกรณ์มีปัญหาในการทำงานนั้น ก็ยังสามารถนำมาใช้ในการทดสอบการทำงานเบื้องต้นของตัว NodeMCU ได้</p>
-</blockquote>
+</code></pre></div>
+</td></tr></table></p>
+<p><strong> อธิบายการทำงานของโค้ด </strong></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">setup</span><span class="p">(){</span><span class="w">  </span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<div class="admonition note annotate">
+<p class="admonition-title">Phasellus posuere in sem ut cursus (1)</p>
+<p>Lorem ipsum dolor sit amet, (2) consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</div>
+<ol>
+<li>:man_raising_hand: I'm an annotation!</li>
+<li>:woman_raising_hand: I'm an annotation as well!</li>
+</ol>
+<div class="admonition note annotate">
+<p class="admonition-title">Phasellus posuere in sem ut cursus (1)</p>
+<p>การทดลองไฟกะพริบนั้น (1) เป็นจุดเริ่มต้นในการใช้งาน นอกจากนี้หากสงสัยว่าตัวอุปกรณ์มีปัญหาในการทำงานนั้น ก็ยังสามารถนำมาใช้ในการทดสอบการทำงานเบื้องต้นของตัว NodeMCU ได้</p>
+</div>
+<ol>
+<li>:man_raising_hand: I'm an annotation!</li>
+<li>:woman_raising_hand: I'm an annotation as well!</li>
+</ol>
 <h3 id="2-dht11">บทที่ 2: การใช้งาน DHT11</h3>
 <h3 id="3-tft-lcd">บทที่ 3: การใช้งาน TFT LCD</h3>
 <h3 id="4-google-sheet">บทที่ 4: บันทึกใน Google sheet</h3>
@@ -522,6 +602,10 @@
     
     
       <script src="../assets/javascripts/bundle.1514a9a0.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>
