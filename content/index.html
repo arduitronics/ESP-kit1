@@ -417,9 +417,30 @@
 <h1 id="_1">เอกสารการทดลอง</h1>
 <p>สำหรับใช้กับชุดทดลอง ESP32 Kit1</p>
 <h2 id="_2">เป้าหมายการเรียนรู้</h2>
-<p>การทดลองต่อไปนี้เป็นตัวอย่างในการใช้ ESP32 เพื่ออ่านค่าจากเซนเซอร์และนำค่าแสดงในโทรศัพท์มือถือ หรือ เข้าดูผ่านเว็บไซต์ ทำให้ผู้ใช้งานสามารถอ่านค่าเซนเซอร์ที่ติดตั้งไว้ จากที่ใดก็ได้ ตราบเท่าที่สามารถเข้าถึงระบบอินเทอร์เน็ต (ทั้งฝั่งส่งและรับ)  นอกจากนี้สามารถประยุกต์ใช้ในการควบคุมอุปกรณ์ระยะไกลได้ เพื่อให้เกิดความสมบูรณ์ในการแสดงค่า  การทดลองต่อไปนี้จึงสาธิตการแสดงผลการวัดที่ serial monitor และ TFT LCD อีกด้วย</p>
+<p>การทดลองต่อไปนี้เป็นตัวอย่างในการใช้ ESP32 เพื่ออ่านค่าจากเซนเซอร์และนำค่าที่ได้แสดงในโทรศัพท์มือถือ หรือ เข้าดูผ่านเว็บไซต์ ทำให้ผู้ใช้งานสามารถอ่านค่าเซนเซอร์ที่ติดตั้งไว้ จากที่ใดก็ได้ ตราบเท่าที่สามารถเข้าถึงระบบอินเทอร์เน็ต (ทั้งฝั่งส่งและรับ)  </p>
+<p>นอกจากนี้สามารถประยุกต์ใช้ในการควบคุมอุปกรณ์ระยะไกลได้ เพื่อให้เกิดความสมบูรณ์ในการแสดงค่า  การทดลองต่อไปนี้จึงสาธิตการแสดงผลการวัดที่ serial monitor และ TFT LCD อีกด้วย</p>
 <h2 id="_3">เนื้อหาบทเรียน</h2>
 <h3 id="1-led">บทที่ 1: LED ไฟกะพริบ</h3>
+<p>การทดลองไฟกะพริบนั้นเป็นจุดเริ่มต้นในการใช้งาน นอกจากนี้หากสงสัยว่าตัวอุปกรณ์มีปัญหาในการทำงานนั้น ก็ยังสามารถนำมาใช้ในการทดสอบการทำงานเบื้องต้นของตัว NodeMCU ได้  สำหรับบอร์ด NodeMCU ESP32 ที่ใช้นี้มี Light Emitting Diode: LED ที่ติดตั้งอยู่บนตัวบอร์ดไว้ให้แล้ว (On board LED)<br />
+การติดตสว่างของ LED นั้นเกิดขึนเมื่อจ่ายแรงดันทำงาน 3V ให้กับ LED และเมื่อหยุดจ่ายแรงดัน 3V ก็จะหยุดเปล่งแสง 
+    <figure markdown>
+    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/squarewave.png" width="600" />
+    <figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
+    </figure>
+โดยสามารถทดสอบด้วย Sketch ดังต่อไปนี้<br />
+<div class="highlight"><pre><span></span><code><span class="c1">//LED Blink</span>
+<span class="c1">//The LED will turn on for one second and then turn off for one second</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
 <h3 id="2-dht11">บทที่ 2: การใช้งาน DHT11</h3>
 <h3 id="3-tft-lcd">บทที่ 3: การใช้งาน TFT LCD</h3>
 <h3 id="4-google-sheet">บทที่ 4: บันทึกใน Google sheet</h3>
