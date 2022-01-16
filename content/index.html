@@ -421,8 +421,12 @@
 <p>นอกจากนี้สามารถประยุกต์ใช้ในการควบคุมอุปกรณ์ระยะไกลได้ เพื่อให้เกิดความสมบูรณ์ในการแสดงค่า  การทดลองต่อไปนี้จึงสาธิตการแสดงผลการวัดที่ serial monitor และ TFT LCD อีกด้วย</p>
 <h2 id="_3">เนื้อหาบทเรียน</h2>
 <h3 id="1-led">บทที่ 1: LED ไฟกะพริบ</h3>
-<p>การทดลองไฟกะพริบนั้นเป็นจุดเริ่มต้นในการใช้งาน นอกจากนี้หากสงสัยว่าตัวอุปกรณ์มีปัญหาในการทำงานนั้น ก็ยังสามารถนำมาใช้ในการทดสอบการทำงานเบื้องต้นของตัว NodeMCU ได้  สำหรับบอร์ด NodeMCU ESP32 ที่ใช้นี้มี Light Emitting Diode: LED ที่ติดตั้งอยู่บนตัวบอร์ดไว้ให้แล้ว (On board LED)<br />
-การติดตสว่างของ LED นั้นเกิดขึนเมื่อจ่ายแรงดันทำงาน 3V ให้กับ LED และเมื่อหยุดจ่ายแรงดัน 3V ก็จะหยุดเปล่งแสง 
+<p>สำหรับบอร์ด NodeMCU ESP32 ที่ใช้นี้มี Light Emitting Diode: LED ที่ติดตั้งอยู่บนตัวบอร์ดไว้ให้แล้ว (On board LED)<br />
+    <figure markdown>
+    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32-onboardled.jpg" width="600" />
+    <figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
+    </figure>
+การติดสว่างของ LED นั้นเกิดขึนเมื่อจ่ายแรงดันทำงาน 3V ให้กับ LED และเมื่อหยุดจ่ายแรงดัน 3V ก็จะหยุดเปล่งแสง 
     <figure markdown>
     <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/squarewave.png" width="600" />
     <figcaption>สัญญาณดิจิทัลที่ควบคุมการติดดับของ LED</figcaption>
@@ -441,6 +445,10 @@
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></p>
+<blockquote>
+<p><strong>รู้หรือไม่</strong>
+การทดลองไฟกะพริบนั้นเป็นจุดเริ่มต้นในการใช้งาน นอกจากนี้หากสงสัยว่าตัวอุปกรณ์มีปัญหาในการทำงานนั้น ก็ยังสามารถนำมาใช้ในการทดสอบการทำงานเบื้องต้นของตัว NodeMCU ได้</p>
+</blockquote>
 <h3 id="2-dht11">บทที่ 2: การใช้งาน DHT11</h3>
 <h3 id="3-tft-lcd">บทที่ 3: การใช้งาน TFT LCD</h3>
 <h3 id="4-google-sheet">บทที่ 4: บันทึกใน Google sheet</h3>
