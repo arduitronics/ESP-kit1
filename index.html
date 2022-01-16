@@ -217,18 +217,33 @@
     ข้อมูลทั่วไป
   </a>
   
-    <nav class="md-nav" aria-label="ข้อมูลทั่วไป">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#subsubheadline" class="md-nav__link">
-    Subsubheadline
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodemcu" class="md-nav__link">
+    รู้จักกับ NodeMCU
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    รายการอุปกรณ์ที่ใช้ในการทดลอง
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" class="md-nav__link">
+    Project layout
+  </a>
   
 </li>
       
@@ -316,18 +331,33 @@
     ข้อมูลทั่วไป
   </a>
   
-    <nav class="md-nav" aria-label="ข้อมูลทั่วไป">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#subsubheadline" class="md-nav__link">
-    Subsubheadline
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodemcu" class="md-nav__link">
+    รู้จักกับ NodeMCU
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    รายการอุปกรณ์ที่ใช้ในการทดลอง
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" class="md-nav__link">
+    Project layout
+  </a>
   
 </li>
       
@@ -347,17 +377,28 @@
 <h1 id="nodemcu-esp-32">NodeMCU ESP-32</h1>
 <h2 id="_1">ข้อมูลทั่วไป</h2>
 <p>เอกสารต่อไปนี้เป็นคู่มือการใช้งาน ESP32 และคู้มือการทดลองสำหรับอุปกรณ์ในชุด ESP32 Kit1 โดย <a href="https://www.arduitronics.com">Arduitronics.com</a>  </p>
+<h2 id="nodemcu">รู้จักกับ NodeMCU</h2>
 <p>บอร์ดในลักษณะ NodeMCU นั้นมีหลากหลายรูปแบบ การจัดเรียงอุปกรณ์บนบอร์ด และมีคุณสมบัติการทำงานที่แตกต่างกัน โดยมีการใช้ Chip ที่เป็นอุปกรณ์หลักสำคัญ 2 รุ่น ได้แก่ ESP8266 และ ESP32  แต่ละรุ่นยังแบ่งออกเป็นหลาย series ให้ผู้ใช้สามารถเลือกใช้ตามความเหมาะสม (ขนาด ฟังก์ชั่นการทำงาน ความสามรถในการประมวลผล เป็นต้น)</p>
 <ol>
-<li>ESP-32 Solo (เฉพาะตัว )<br />
-<img alt="ESP32 solo1 โดย Espressif!" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32_solo1.jpeg" title="ESP32 รุ่น Solo1" /> </li>
-<li>NodeMCU ESP32 รุ่น Solo1 สามารถใช้งานกับ Wifi / Bluetooh เป็นรุ่นเริ่มต้น <br />
-<img alt="NodeMCU ESP32" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32.png" title="NodeMCU ESP32 รุ่น S" /></li>
-<li>32-bit MCU &amp; 2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE) สามารถใช้งานกับ Wifi / Bluetooh มีส่วนประมวลผลแบบ Dual Core ทำให้สามารถทำงานที่ซับซ้อนมากขึ้นกว่ารุ่นแรก<br />
-<img alt="NodeMCU ESP32S" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32s.png" /> </li>
+<li><em>ESP-32 Solo (เฉพาะตัว )</em> 
+    <figure markdown>
+    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32_solo1.jpeg" width="400" />
+    <figcaption> Chip  ESP32 Solo1 </figcaption>
+    </figure></li>
+<li><em>NodeMCU ESP32 รุ่น Solo1</em><br />
+   สามารถใช้งานกับ Wifi / Bluetooh เป็นรุ่นเริ่มต้น <br />
+    <figure markdown>
+    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32.png" width="400" />
+    <figcaption>NodeMCU ESP32 </figcaption>
+    </figure></li>
+<li><em>NodeMCU ESP32S</em> <br />
+   รุ่นนี้ประมวลผลโดยใช้สถาปัตยกรรม 32-bit MCU &amp; 2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE) สามารถใช้งานกับ Wifi / Bluetooh มีส่วนประมวลผลแบบ Dual Core ทำให้สามารถทำงานที่ซับซ้อนมากขึ้นกว่ารุ่นแรก<br />
+    <figure markdown>
+    <img alt="Image title" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32s.png" width="400" />
+    <figcaption>NodeMCU ESP32S</figcaption>
+    </figure></li>
 </ol>
-<h3 id="subsubheadline">Subsubheadline</h3>
-<h1 id="_2">อุปกรณ์ที่ใช้ในการทดลอง</h1>
+<h2 id="_2">รายการอุปกรณ์ที่ใช้ในการทดลอง</h2>
 <p>เพื่อการทดลองตามรายละเอียดในเอกสารนี้ โปรดเตรียมอุปกรณ์ ESP-Kit1 ดังต่อไปนี้</p>
 <ul>
 <li>บอร์ด ESP-32</li>
@@ -374,11 +415,15 @@
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
-</code></pre>
+</code></pre></div>
+</td></tr></table>
 
               
             </article>

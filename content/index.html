@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -203,9 +203,88 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Content
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Content
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    เป้าหมายการเรียนรู้
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    เนื้อหาบทเรียน
+  </a>
+  
+    <nav class="md-nav" aria-label="เนื้อหาบทเรียน">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-led" class="md-nav__link">
+    บทที่ 1: LED ไฟกะพริบ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dht11" class="md-nav__link">
+    บทที่ 2: การใช้งาน DHT11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-tft-lcd" class="md-nav__link">
+    บทที่ 3: การใช้งาน TFT LCD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-google-sheet" class="md-nav__link">
+    บทที่ 4: บันทึกใน Google sheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-netpie" class="md-nav__link">
+    บทที่ 5: Netpie
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -261,6 +340,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    เป้าหมายการเรียนรู้
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    เนื้อหาบทเรียน
+  </a>
+  
+    <nav class="md-nav" aria-label="เนื้อหาบทเรียน">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-led" class="md-nav__link">
+    บทที่ 1: LED ไฟกะพริบ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dht11" class="md-nav__link">
+    บทที่ 2: การใช้งาน DHT11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-tft-lcd" class="md-nav__link">
+    บทที่ 3: การใช้งาน TFT LCD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-google-sheet" class="md-nav__link">
+    บทที่ 4: บันทึกใน Google sheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-netpie" class="md-nav__link">
+    บทที่ 5: Netpie
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -272,7 +414,16 @@
               
                 
 
-<h1 id="1">เนื้อหาการทดลองที่ 1</h1>
+<h1 id="_1">เอกสารการทดลอง</h1>
+<p>สำหรับใช้กับชุดทดลอง ESP32 Kit1</p>
+<h2 id="_2">เป้าหมายการเรียนรู้</h2>
+<p>การทดลองต่อไปนี้เป็นตัวอย่างในการใช้ ESP32 เพื่ออ่านค่าจากเซนเซอร์และนำค่าแสดงในโทรศัพท์มือถือ หรือ เข้าดูผ่านเว็บไซต์ ทำให้ผู้ใช้งานสามารถอ่านค่าเซนเซอร์ที่ติดตั้งไว้ จากที่ใดก็ได้ ตราบเท่าที่สามารถเข้าถึงระบบอินเทอร์เน็ต (ทั้งฝั่งส่งและรับ)  นอกจากนี้สามารถประยุกต์ใช้ในการควบคุมอุปกรณ์ระยะไกลได้ เพื่อให้เกิดความสมบูรณ์ในการแสดงค่า  การทดลองต่อไปนี้จึงสาธิตการแสดงผลการวัดที่ serial monitor และ TFT LCD อีกด้วย</p>
+<h2 id="_3">เนื้อหาบทเรียน</h2>
+<h3 id="1-led">บทที่ 1: LED ไฟกะพริบ</h3>
+<h3 id="2-dht11">บทที่ 2: การใช้งาน DHT11</h3>
+<h3 id="3-tft-lcd">บทที่ 3: การใช้งาน TFT LCD</h3>
+<h3 id="4-google-sheet">บทที่ 4: บันทึกใน Google sheet</h3>
+<h3 id="5-netpie">บทที่ 5: Netpie</h3>
 
               
             </article>
