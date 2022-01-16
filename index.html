@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#nodemcu-esp-32" class="md-skip">
           Skip to content
         </a>
       
@@ -188,9 +188,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ข้อมูลทั่วไป
+  </a>
+  
+    <nav class="md-nav" aria-label="ข้อมูลทั่วไป">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subsubheadline" class="md-nav__link">
+    Subsubheadline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -261,6 +305,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ข้อมูลทั่วไป
+  </a>
+  
+    <nav class="md-nav" aria-label="ข้อมูลทั่วไป">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subsubheadline" class="md-nav__link">
+    Subsubheadline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -272,19 +344,20 @@
               
                 
 
-<h1 id="_1">ข้อมูลทั่วไป<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>เอกสารต่อไปนี้เป็นคู่มือการใช้งาน ESP32 และคู้มือการทดลองสำหรับอุปกรณ์ในชุด ESP32 Kit1 โดย <a href="https://www.arduitronics.com">Arduitronics.com</a> </p>
-<p>บอร์ดในลักษณะ NodeMCU นั้นมีหลากหลายรูปแบบการจัดเรียงอุปกรณ์บนบอร์ด และมีคุณสมบัติการทำงานที่แตกต่างกัน โดยมีการใช้ Chip ที่เป็นอุปกรณ์หลักสำคัญ 2 รุ่น ได้แก่ ESP8266 และ ESP32  แต่ละรุ่นยังแบ่งออกเป็นหลาย series ให้ผู้ใช้สามารถเลือกใช้ตามความเหมาะสม (ขนาด ฟังก์ชั่นการทำงาน ความสามรถในการประมวลผล เป็นต้น)</p>
-<!--- 
-1. ESP-32 Solo (เฉพาะตัว )  
-![ESP32 solo1 โดย Espressif!](https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32_solo1.jpeg "ESP32 รุ่น Solo1") 
-2. NodeMCU ESP32 รุ่น Solo1 สามารถใช้งานกับ Wifi / Bluetooh เป็นรุ่นเริ่มต้น   
-![NodeMCU ESP32](https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32.png "NodeMCU ESP32 รุ่น S")
-3. 32-bit MCU & 2.4 GHz Wi-Fi & Bluetooth 5 (LE) สามารถใช้งานกับ Wifi / Bluetooh มีส่วนประมวลผลแบบ Dual Core ทำให้สามารถทำงานที่ซับซ้อนมากขึ้นกว่ารุ่นแรก  
-![NodeMCU ESP32S](https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32s.png) 
-
---->
-<h1 id="_2">อุปกรณ์ที่ใช้ในการทดลอง<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h1 id="nodemcu-esp-32">NodeMCU ESP-32</h1>
+<h2 id="_1">ข้อมูลทั่วไป</h2>
+<p>เอกสารต่อไปนี้เป็นคู่มือการใช้งาน ESP32 และคู้มือการทดลองสำหรับอุปกรณ์ในชุด ESP32 Kit1 โดย <a href="https://www.arduitronics.com">Arduitronics.com</a>  </p>
+<p>บอร์ดในลักษณะ NodeMCU นั้นมีหลากหลายรูปแบบ การจัดเรียงอุปกรณ์บนบอร์ด และมีคุณสมบัติการทำงานที่แตกต่างกัน โดยมีการใช้ Chip ที่เป็นอุปกรณ์หลักสำคัญ 2 รุ่น ได้แก่ ESP8266 และ ESP32  แต่ละรุ่นยังแบ่งออกเป็นหลาย series ให้ผู้ใช้สามารถเลือกใช้ตามความเหมาะสม (ขนาด ฟังก์ชั่นการทำงาน ความสามรถในการประมวลผล เป็นต้น)</p>
+<ol>
+<li>ESP-32 Solo (เฉพาะตัว )<br />
+<img alt="ESP32 solo1 โดย Espressif!" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/ESP32_solo1.jpeg" title="ESP32 รุ่น Solo1" /> </li>
+<li>NodeMCU ESP32 รุ่น Solo1 สามารถใช้งานกับ Wifi / Bluetooh เป็นรุ่นเริ่มต้น <br />
+<img alt="NodeMCU ESP32" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32.png" title="NodeMCU ESP32 รุ่น S" /></li>
+<li>32-bit MCU &amp; 2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE) สามารถใช้งานกับ Wifi / Bluetooh มีส่วนประมวลผลแบบ Dual Core ทำให้สามารถทำงานที่ซับซ้อนมากขึ้นกว่ารุ่นแรก<br />
+<img alt="NodeMCU ESP32S" src="https://raw.githubusercontent.com/arduitronics/ESP-kit1/gh-pages/assets/img/nodemcuesp32s.png" /> </li>
+</ol>
+<h3 id="subsubheadline">Subsubheadline</h3>
+<h1 id="_2">อุปกรณ์ที่ใช้ในการทดลอง</h1>
 <p>เพื่อการทดลองตามรายละเอียดในเอกสารนี้ โปรดเตรียมอุปกรณ์ ESP-Kit1 ดังต่อไปนี้</p>
 <ul>
 <li>บอร์ด ESP-32</li>
@@ -293,23 +366,19 @@
 <li>Jumper male to male ยาว 30 cm</li>
 </ul>
 <p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<h2 id="commands">Commands</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
 <li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mkdocs.yml    # The configuration file.
+<h2 id="project-layout">Project layout</h2>
+<pre><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
-</code></pre></div>
-</td></tr></table>
+</code></pre>
 
               
             </article>
