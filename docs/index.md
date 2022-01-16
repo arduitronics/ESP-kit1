@@ -1,4 +1,20 @@
-# Welcome to MkDocs
+# ข้อมูลทั่วไป
+เอกสารต่อไปนี้เป็นคู่มือการใช้งาน ESP32 และคู้มือการทดลองสำหรับอุปกรณ์ในชุด ESP32 Kit1 โดย [Arduitronics.com](https://www.arduitronics.com) 
+
+บอร์ดในลักษณะ NodeMCU นั้นมีหลากหลายรูปแบบการจัดเรียงอุปกรณ์บนบอร์ด และมีคุณสมบัติการทำงานที่แตกต่างกัน โดยมีการใช้ Chip ที่เป็นอุปกรณ์หลักสำคัญ 2 แบบ ได้แก่ ESP8266 และ ESP32
+
+![ESP32 solo1 โดย Espressif!](/docs/img/ESP32_solo1.jpeg "ESP32")
+
+
+# อุปกรณ์ที่ใช้ในการทดลอง
+เพื่อการทดลองตามรายละเอียดในเอกสารนี้ โปรดเตรียมอุปกรณ์ ESP-Kit1 ดังต่อไปนี้
+
+* บอร์ด ESP-32
+* DHT11 หรือ DHT22 
+* Breadboard ขนาด 1030
+* Jumper male to male ยาว 30 cm
+
+
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
