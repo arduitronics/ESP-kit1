@@ -22,6 +22,13 @@
   <p align="center">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/NgPwPKXCLFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
+
+## Voltage Divider
+    การวัดค่าแรงดันของแบตเตอรี่ทำได้โดยการใช้วงจร Voltage divider  อย่างไรก็ตามหากใช้ตัวต้านทานมาประกอบเป็น Voltage divider โดยตรงนั้น จะทำให้มีกระแสไหลผ่านตัวต้านทานตลอดเวลา ส่งผลต่ออายุการทำงานของวงจร ดังนั้นจึงต้องการวัดค่าแรงดันเฉพาะช่วงเวลาที่ต้องการเท่านั้น (เวลาที่ ESP8266 ตื่นมาทำงาน) ซึ่งเป็นช่วงเวลาสั้นๆ 
+
+<p align="center">
+<img src="https://github.com/arduitronics/ESP-kit1/blob/main/docs/img/voltagedivider.jpg?raw=true" alt="alt text" title="ESP12F" width="500"/>
+</p>
 ## Deep Sleep และ Wake up 
   การทำให้ ESP8266 เข้าสู้โหมด Deep sleep ทำโดยใช้คำสั่ง 
 
