@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://arduitronics.github.io/ESP-kit1/barebone/</loc>
+         <lastmod>2022-03-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://arduitronics.github.io/ESP-kit1/content/</loc>
          <lastmod>2022-03-19</lastmod>
          <changefreq>daily</changefreq>
