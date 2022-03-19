@@ -383,6 +383,7 @@
 <p align="center">
 <img src="https://github.com/arduitronics/ESP-kit1/blob/main/docs/img/esp12f.jpg?raw=true" alt="alt text" title="ESP12F" width="350"/>
 </p>
+
 <p>เป้าหมายเป็นการศึกษาการตอบสนองการใช้งานรับส่งค่าที่อ่านได้จาก Node ต่างๆ โดยกำหนดให้จ่ายแรงดันจากแบตเตอรี่แบบ Lithium 18650 เพียงก้อนเดียว (2200 mAh) ให้ได้นานที่สุด (มากกว่า 3 เดือน) ทดสอบโดยการใช้ ESP8266 อ่านค่าแรงดันไฟฟ้าของแบตเตอรี่ที่จ่ายแรงดันให้กับ ESP8266 ด้วย Pin A0 </p>
 <p>ขั้นตอนการทำงานในการทดสอบการใช้พลังงานของบอร์ด ESP8266 ที่จะทดสอบมีดังนี้</p>
 <ol>
@@ -393,9 +394,11 @@
 </ol>
 <p>เพื่อการสังเกตการใช้พลังงานของ ESP8266  MCP1700 (Low power voltage regulator) และองค์ประกอบอื่นๆ ในการอ่านค่า ทำได้โดยการวัดกระแสที่ผ่านเข้าในแต่ละองค์ประกอบของวงจร </p>
 <h2 id="_1">การต่อวงจรที่ใช้ทดสอบ</h2>
-<p>ในการทดสอบนี้ หลังจากอ่านค่าจาก Analog channel A0 และส่งค่าไปที่ Netpie แล้ว  EPS8266 จะเข้าสู่ Deep sleep mode เพื่อประหยัดพลังงาน  อย่างไรก็ตามถึงแม้จะอยู่ใน Deep sleep แต่ Internal Clock ยังสามารถใช้งานได้ และสามารถใช้เป็น Interupt เพื่อปลุกให้ตัว ESP8266 ตื่นขึ้นมาทำงานได้</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NgPwPKXCLFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<p>ในการทดสอบนี้ หลังจากอ่านค่าจาก Analog channel A0 และส่งค่าไปที่ Netpie แล้ว  EPS8266 จะเข้าสู่ Deep sleep mode เพื่อประหยัดพลังงาน  อย่างไรก็ตามถึงแม้จะอยู่ใน Deep sleep แต่ Internal Clock ยังสามารถใช้งานได้ และสามารถใช้เป็น Interupt เพื่อปลุกให้ตัว ESP8266 ตื่นขึ้นมาทำงานได้
+<br />
+<p align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/NgPwPKXCLFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p></p>
 <h2 id="deep-sleep-wake-up">Deep Sleep และ Wake up</h2>
 <p>การทำให้ ESP8266 เข้าสู้โหมด Deep sleep ทำโดยใช้คำสั่ง </p>
 <p><code>ESP.deepSleep(sleepTimeS * 1000000);</code></p>
