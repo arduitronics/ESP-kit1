@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#esp8266-low-power" class="md-skip">
+        <a href="#esp8266-barebone" class="md-skip">
           Skip to content
         </a>
       
@@ -219,9 +219,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Barebone ESP8266
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Barebone ESP8266
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#esp8266-low-power" class="md-nav__link">
+    การใช้งาน ESP8266 Low power
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    การต่อวงจรที่ใช้ทดสอบ
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -277,6 +315,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#esp8266-low-power" class="md-nav__link">
+    การใช้งาน ESP8266 Low power
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    การต่อวงจรที่ใช้ทดสอบ
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -289,7 +349,8 @@
                 
 
 
-<h1 id="esp8266-low-power">การใช้งาน ESP8266 Low power</h1>
+<h1 id="esp8266-barebone">ESP8266 Barebone</h1>
+<h2 id="esp8266-low-power">การใช้งาน ESP8266 Low power</h2>
 <p>รายละเอียดต่อไปนี้เป็นการใช้งาน ESP8266 แบบ Low power  ซึ่งเป็นการใช้เฉพาะ Chip ESP-8266 ไม่ได้ใช้งานแบบ NodeMCU โดย <a href="https://www.arduitronics.com">Arduitronics.com</a> </p>
 <p><img alt="ESP12F โดย Espressif!" src="https://github.com/arduitronics/ESP-kit1/blob/main/docs/img/esp12f.jpg?raw=true" title="ESP12F" /></p>
 <p>เป้าหมายเป็นการศึกษาการตอบสนองการใช้งานรับส่งค่าที่อ่านได้จาก Node ต่างๆ โดยกำหนดให้จ่ายแรงดันจากแบตเตอรี่แบบ Lithium 18650 เพียงก้อนเดียว (2200 mAh) ให้ได้นานที่สุด (มากกว่า 3 เดือน) ทดสอบโดยการใช้ ESP8266 อ่านค่าแรงดันไฟฟ้าของแบตเตอรี่ที่จ่ายแรงดันให้กับ ESP8266 ด้วย Pin A0 </p>
@@ -301,7 +362,7 @@
 <li>ส่งค่าที่อ่านได้แสดงบน netpie</li>
 </ol>
 <p>เพื่อการสังเกตการใช้พลังงานของ ESP8266  MCP1700 (Low power voltage regulator) และองค์ประกอบอื่นๆ ในการอ่านค่า ทำได้โดยการวัดกระแสที่ผ่านเข้าในแต่ละองค์ประกอบของวงจร </p>
-<h1 id="_1">การต่อวงจรที่ใช้ทดสอบ</h1>
+<h2 id="_1">การต่อวงจรที่ใช้ทดสอบ</h2>
 <p>ในการทดสอบนี้ หลังจากอ่านค่าจาก Analog channel A0 และส่งค่าไปที่ Netpie แล้ว  EPS8266 จะเข้าสู่ Deep sleep mode เพื่อประหยัดพลังงาน  อย่างไรก็ตามถึงแม้จะอยู่ใน Deep sleep แต่ Internal Clock ยังสามารถใช้งานได้ และสามารถใช้เป็น Interupt เพื่อปลุกให้ตัว ESP8266 ตื่นขึ้นมาทำงานได้</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NgPwPKXCLFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
