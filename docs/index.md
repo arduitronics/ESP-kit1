@@ -3,7 +3,7 @@
 
 บอร์ดในลักษณะ NodeMCU นั้นมีหลากหลายรูปแบบการจัดเรียงอุปกรณ์บนบอร์ด และมีคุณสมบัติการทำงานที่แตกต่างกัน โดยมีการใช้ Chip ที่เป็นอุปกรณ์หลักสำคัญ 2 แบบ ได้แก่ ESP8266 และ ESP32
 
-![ESP32 solo1 โดย Espressif!](/docs/img/ESP32_solo1.jpeg "ESP32")
+![ESP32 solo1 โดย Espressif!](https://github.com/arduitronics/ESP-kit1/raw/main/docs/img/ESP32_solo1.jpeg "ESP32")
 
 
 # อุปกรณ์ที่ใช้ในการทดลอง
