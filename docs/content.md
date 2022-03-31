@@ -34,12 +34,12 @@ Arduino IDE คือ ซอฟแวร์ที่รวบรวมเคร�
 - เปิด Arduino IDE.
 - Copy โค้ดด้านล่าง และกด Verify เพื่อตรวจสอบความถูกต้องของ Syntax และความผิดพลาดอื่นๆ จากนั้น Upload โค้ด
   
-   ```Cpp
-   void setup() {
-   Serial.begin(9600); // initializes the serial port with a baud rate of 9600
-   }
-   void loop() {
-   Serial.println("hello, world"); // prints a string to a serial port
-   delay(1000); //delay of 1 second
-   }
-   ```
+```Cpp
+void setup() {
+Serial.begin(9600); // initializes the serial port with a baud rate of 9600
+}
+void loop() {
+Serial.println("hello, world"); // prints a string to a serial port
+delay(1000); //delay of 1 second
+}
+```

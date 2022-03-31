@@ -34,7 +34,7 @@
 
 ## Deep Sleep และ Wake up 
   การทำให้ ESP8266 เข้าสู้โหมด Deep sleep ทำโดยใช้คำสั่ง 
-g
+
  `ESP.deepSleep(sleepTimeS * 1000000); `
 
 

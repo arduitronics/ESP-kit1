@@ -1,4 +1,4 @@
-site_name: Arduitronics ESP Kit1
+site_name: ESPKITS
 site_url: https://arduitronics.github.io/ESP-kit1/
 nav:
     - Home: index.md
@@ -12,7 +12,7 @@ theme:
 
 # Extensions
 markdown_extensions:
-   - codehilite
+  - codehilite
   - markdown.extensions.admonition
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
