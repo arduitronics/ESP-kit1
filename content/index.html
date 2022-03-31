@@ -422,17 +422,12 @@
 <span class="o">-</span><span class="w"> </span><span class="n">Copy</span><span class="w"> </span><span class="err">โค้ดด้านล่าง</span><span class="w"> </span><span class="err">และกด</span><span class="w"> </span><span class="n">Verify</span><span class="w"> </span><span class="err">เพื่อตรวจสอบความถูกต้องของ</span><span class="w"> </span><span class="n">Syntax</span><span class="w"> </span><span class="err">และความผิดพลาดอื่นๆ</span><span class="w"> </span><span class="err">จากนั้น</span><span class="w"> </span><span class="n">Upload</span><span class="w"> </span><span class="err">โค้ด</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
-<div class="highlight"><pre><span></span><code><span class="c1">//LED Blink</span>
-<span class="c1">//The LED will turn on for one second and then turn off for one second</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"> </span><span class="c1">// initializes the serial port with a baud rate of 9600</span>
 <span class="p">}</span><span class="w"></span>
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;hello, world&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// prints a string to a serial port</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">//delay of 1 second</span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
