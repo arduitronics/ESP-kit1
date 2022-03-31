@@ -12,7 +12,7 @@ theme:
 
 # Extensions
 markdown_extensions:
-  - codehilite
+   - codehilite
   - markdown.extensions.admonition
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
