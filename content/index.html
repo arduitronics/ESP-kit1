@@ -385,7 +385,41 @@
 <ol>
 <li>ปิดโปรแกรม Arduino IDE บนเครื่อง PC ของคุณ</li>
 <li>คลิ๊กเลือก Tools -&gt; Board เพื่อเลือกชนิดของบอร์ด และเลือก Arduino/Generic ESP8266 เป็นบอร์ดที่คุณใช้</li>
+<li>คลิ๊ก Tools -&gt; Port เพื่อเลือก Port ที่ถูกต้อง (เลือกให้ตรงกับ Port ที่แสดงไว้ในขั้นตอนก่อนหน้า). ในตัวอย่างนี้เลือก COM6</li>
+<li>
+<p>สร้างไฟล์ใหม่และใช้ชื่อ Hello.ino จากนั้น copy โปรแกรมไปไว้ในไฟล์ที่สร้าง:</p>
+</li>
+<li>
+<p><font size=5;font color=#314B9F >Hardware connection</font></p>
+<ul>
+<li><strong>Module connection</strong><ul>
+<li>Default connection by PCB stamp hole.</li>
+</ul>
+</li>
+<li>Connect the Seeeduino to the computer through the USB cable.</li>
+</ul>
+</li>
+<li>
+<p><font size=5;font color=#314B9F >Software Code</font></p>
+<ul>
+<li>Open Arduino IDE.</li>
+<li>Copy the following code, click Verify to check for syntax errors. Verify that there are no errors, and you can upload the code.</li>
+</ul>
+</li>
 </ol>
+<div class="highlight"><pre><span></span><code><span class="c1">//LED Blink</span>
+<span class="c1">//The LED will turn on for one second and then turn off for one second</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 
               
             </article>
