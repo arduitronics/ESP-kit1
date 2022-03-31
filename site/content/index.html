@@ -201,12 +201,66 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Content
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Content
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    เนื้อหาการทดลองที่ 1
+  </a>
+  
+    <nav class="md-nav" aria-label="เนื้อหาการทดลองที่ 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide" class="md-nav__link">
+    การลงโปรแกรม Arduino IDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    การติดตั้งไดรเวอร์ของพอร์ต USB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide_1" class="md-nav__link">
+    เริ่มต้นใช้งาน Arduino IDE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -274,8 +328,48 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    เนื้อหาการทดลองที่ 1
+  </a>
+  
+    <nav class="md-nav" aria-label="เนื้อหาการทดลองที่ 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide" class="md-nav__link">
+    การลงโปรแกรม Arduino IDE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    การติดตั้งไดรเวอร์ของพอร์ต USB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arduino-ide_1" class="md-nav__link">
+    เริ่มต้นใช้งาน Arduino IDE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -289,7 +383,53 @@
                 
 
 
-<h1 id="1">เนื้อหาการทดลองที่ 1</h1>
+  <h1>Content</h1>
+
+<h2 id="1">เนื้อหาการทดลองที่ 1</h2>
+<h3 id="arduino-ide">การลงโปรแกรม Arduino IDE</h3>
+<p>เริ่มต้นการลงมือใช้งาน ESP8266 หรือ NodeMCU จากการลงโปรแกรม</p>
+<p>Arduino IDE คือ ซอฟแวร์ที่รวบรวมเครื่องมือต่างๆ (การติอต่อกับ ฮาร์ดแวร์ การ Compile โปรแกรม Editor ที่ใช้ในการเขียน Skecth การทดสอบการทำงานของโปรแกรมที่พัฒนาขึ้นบนบอร์ด) ซื่งจำเป็นที่ต้องใช้ในการพัฒนาระบบไมโครคอนโทรลเลอร์
+สามารถดาว์นโหลดโปรแกรม Arduino IDE <a href="https://www.arduino.cc/en/software">ได้ที่</a> โดยตุณสามารถเลือกใช้ตาม OS ของคุณ</p>
+<p align="center">
+<img src="https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3_1/images/Download_IDE.png" alt="alt text" title="IDE Download" width="500"/>
+</p>
+
+<h3 id="usb">การติดตั้งไดรเวอร์ของพอร์ต USB</h3>
+<ul>
+<li>บอร์ด Arduino ติดต่อกับเครื่องพีซีผ่านเคเบิ่ลที่ใช้หัว USB รุ่นต่างๆ ซึ่งไดรเวอร์ของหัว USB ที่ต้องติดตั้งนั้น ขึ้นกับชนิดของ Chip ที่ใช้บนบอร์ด Arduino ของคุณ หมายเหตุ: โดยปกติแล้วชนิดของชิบ USB จะถูกระบุไว้บนด้านหลังของตัวบอร์ด</li>
+<li>ดาวน์โหลด ไดรเวอร์ของ USB รุ่น CP2102. หมายเหตุ: โปรดเลือกตาม OS ที่คุณใช้</li>
+<li>หลังจากติดตั้งไดรเวอร์สำเร็จแล้ว ให้ต่อบอร์ด Arduino โดยใช้สายแลหัวต่อ USB เข้ากับเครื่องคอมพิวเตอร์</li>
+<li>สำหรับผู้ใช้ระบบปฏิบัติการ Windows คุณสามารถดูพอร์ตที่ติดตั้งได้จาก 'My Computer' -&gt; Properties -&gt; Hardware -&gt; Device Management จะเห็น 'COM' และตัวเลขแสดงพอร์ต</li>
+<li>สำหรับผู้ใช้ Mac OS คุณสามารถดูพอร์ตที่ติดตั้งได้จาก  ที่มุมบนด้านซ้าย และเลือก About this Mac -&gt; System Report... -&gt; USB. จะเห็น CP2102 USB Driver</li>
+<li>กรณีที่ยังไม่ได้ติดตั้งไดรเวอร์ หรือ ติดตั้งไม่ถูกต้องกับ Chip ที่ใช้ จะเห็น "unknown device" ใน device manager ให้ติดตั้งไดรเวอร์ใหม่</li>
+</ul>
+<h3 id="arduino-ide_1">เริ่มต้นใช้งาน Arduino IDE</h3>
+<ol>
+<li>ปิดโปรแกรม Arduino IDE บนเครื่อง PC ของคุณ</li>
+<li>คลิ๊กเลือก Tools -&gt; Board เพื่อเลือกชนิดของบอร์ด และเลือก Arduino/Generic ESP8266 เป็นบอร์ดที่คุณใช้</li>
+<li>คลิ๊ก Tools -&gt; Port เพื่อเลือก Port ที่ถูกต้อง (เลือกให้ตรงกับ Port ที่แสดงไว้ในขั้นตอนก่อนหน้า). ในตัวอย่างนี้เลือก COM6</li>
+<li>สร้างไฟล์ใหม่และใช้ชื่อ HelloWorld.ino จากนั้น copy โปรแกรมไปไว้ในไฟล์ที่สร้าง:</li>
+</ol>
+<p><font size=5;font color=#314B9F >การต่อวงจร</font></p>
+<ul>
+<li><strong>Module connection</strong><ul>
+<li>ต่อสาย USB เข้ากับบอร์ดและช่อง USB ของเครื่องคอมพิเตอร์</li>
+</ul>
+</li>
+</ul>
+<p><font size=5;font color=#314B9F >โค้ดที่ใช้ทดสอบ</font></p>
+<ul>
+<li>เปิด Arduino IDE.</li>
+<li>Copy โค้ดด้านล่าง และกด Verify เพื่อตรวจสอบความถูกต้องของ Syntax และความผิดพลาดอื่นๆ จากนั้น Upload โค้ด</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w"> </span><span class="c1">// initializes the serial port with a baud rate of 9600</span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;hello, world&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// prints a string to a serial port</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">//delay of 1 second</span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 
               
             </article>
