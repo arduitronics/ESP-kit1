@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://arduitronics.github.io/ESP-kit1/</loc>
-         <lastmod>2022-03-19</lastmod>
+         <lastmod>2022-03-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arduitronics.github.io/ESP-kit1/about/</loc>
-         <lastmod>2022-03-19</lastmod>
+         <lastmod>2022-03-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arduitronics.github.io/ESP-kit1/barebone/</loc>
-         <lastmod>2022-03-19</lastmod>
+         <lastmod>2022-03-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arduitronics.github.io/ESP-kit1/content/</loc>
-         <lastmod>2022-03-19</lastmod>
+         <lastmod>2022-03-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arduitronics.github.io/ESP-kit1/license/</loc>
-         <lastmod>2022-03-19</lastmod>
+         <lastmod>2022-03-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
