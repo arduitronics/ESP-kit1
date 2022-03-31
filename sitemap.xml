@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://arduitronics.github.io/ESP-kit1/gk00001/</loc>
+         <lastmod>2022-03-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://arduitronics.github.io/ESP-kit1/license/</loc>
          <lastmod>2022-03-31</lastmod>
          <changefreq>daily</changefreq>
