@@ -3,6 +3,7 @@ site_url: https://arduitronics.github.io/ESP-kit1/
 nav:
     - Home: index.md
     - Content: content.md
+    - GK00001: gk00001.md
     - Barebone ESP8266: barebone.md
     - License: license.md
     - About: about.md
